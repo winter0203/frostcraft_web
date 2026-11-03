@@ -10,7 +10,6 @@
     "type": "git",
     "url": "git+https://github.com/winter0203/frostcraft.git"
   },
-  "license": "MIT",
   "devDependencies": {
     "tailwindcss": "^3.4.17"
   }

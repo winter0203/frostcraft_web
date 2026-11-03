@@ -32,7 +32,3 @@ FrostCraft 是一个 Minecraft 纯净原版生存服务器，支持 Java 版与�
 - 前端：HTML + Tailwind CSS + 原生 JavaScript
 - 部署：Cloudflare Pages
 - 服务器状态接口：Cloudflare Pages Functions（Minecraft Server List Ping 协议直连游戏服务器）
-
-## License
-
-MIT
