@@ -1,0 +1,176 @@
+/* FrostCraft OreUI-inspired theme
+ * Original implementation inspired by the visual language of Minecraft UI.
+ * Existing page content and JavaScript interactions are preserved.
+ */
+:root {
+  color-scheme: dark;
+  --ore-bg: #454749;
+  --ore-panel: #55585b;
+  --ore-panel-dark: #353739;
+  --ore-light: #dedfe3;
+  --ore-light-edge: #aeb0b5;
+  --ore-text: #f4f4f4;
+  --ore-muted: #c5c7ca;
+  --ore-green: #38852e;
+  --ore-green-hover: #459b38;
+  --ore-border: #202123;
+  --ore-shadow: #252628;
+}
+html { scroll-behavior: smooth; scroll-padding-top: 5.5rem; background: var(--ore-bg); }
+body.oreui-theme {
+  background: var(--ore-bg) !important;
+  color: var(--ore-text);
+  font-family: "Noto Sans", "Microsoft YaHei", system-ui, sans-serif;
+}
+.oreui-theme a { text-decoration: none; }
+.oreui-theme button { -webkit-tap-highlight-color: transparent; }
+.oreui-theme nav.fixed {
+  background: var(--ore-light) !important;
+  color: #171819 !important;
+  border-bottom: 5px solid var(--ore-light-edge);
+  box-shadow: 0 4px 0 rgba(0,0,0,.22) !important;
+  backdrop-filter: none !important;
+}
+.oreui-theme nav.fixed > div { max-width: 1440px; }
+.oreui-theme nav.fixed .h-16 { height: 4.65rem; }
+.oreui-theme nav.fixed .text-blue-600,
+.oreui-theme nav.fixed .text-blue-400 { color: #171819 !important; }
+.oreui-theme nav.fixed a { color: #242527 !important; font-weight: 700; }
+.oreui-theme nav.fixed a:hover { color: var(--ore-green) !important; }
+.oreui-theme nav.fixed button { color: #171819 !important; border-radius: 0 !important; }
+.oreui-theme nav.fixed span { font-family: "Courier New", monospace !important; font-weight: 1000; letter-spacing: .055em; text-transform: uppercase; }
+.oreui-theme .hero-section {
+  position: relative;
+  isolation: isolate;
+  background-color: #353739;
+  background-blend-mode: luminosity;
+}
+.oreui-theme .hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(90deg, rgba(28,29,30,.88), rgba(35,36,37,.58) 62%, rgba(35,36,37,.28));
+}
+.oreui-theme .hero-copy { max-width: 54rem; text-shadow: 0 2px 3px rgba(0,0,0,.45); }
+.oreui-theme .hero-copy h1 {
+  font-family: "Courier New", monospace;
+  font-weight: 1000;
+  letter-spacing: .055em;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 0 #202123, 6px 6px 0 rgba(0,0,0,.3);
+}
+.oreui-theme .hero-copy > p:nth-of-type(2) { max-width: 48rem; }
+.oreui-theme .hero-meta span {
+  background: rgba(35,36,37,.72);
+  border: 2px solid rgba(255,255,255,.18);
+  padding: .55rem .8rem;
+  color: #f2f2f2;
+}
+.oreui-theme section:not(.hero-section) { background: var(--ore-bg) !important; color: var(--ore-text); }
+.oreui-theme section h2,
+.oreui-theme section h3,
+.oreui-theme section p,
+.oreui-theme section li { color: inherit; }
+.oreui-theme section h2 {
+  font-family: "Courier New", "Microsoft YaHei", monospace;
+  font-weight: 900;
+  letter-spacing: .025em;
+  text-shadow: 2px 2px 0 rgba(0,0,0,.35);
+}
+.oreui-theme section .text-gray-900,
+.oreui-theme section .text-gray-800,
+.oreui-theme section .text-gray-700,
+.oreui-theme section .text-gray-600,
+.oreui-theme section .text-gray-500 { color: var(--ore-text) !important; }
+.oreui-theme section .text-blue-600,
+.oreui-theme section .text-blue-700,
+.oreui-theme section .text-green-600 { color: #a5d995 !important; }
+.oreui-theme section .bg-white,
+.oreui-theme section .bg-gray-50,
+.oreui-theme section .bg-gray-100,
+.oreui-theme section .bg-blue-50 {
+  background: var(--ore-panel) !important;
+  color: var(--ore-text) !important;
+}
+.oreui-theme section .border,
+.oreui-theme section [class*="border-"] { border-color: #292b2d !important; }
+.oreui-theme .feature-card,
+.oreui-theme .team-member,
+.oreui-theme #rules .max-w-4xl > div,
+.oreui-theme #faq .space-y-4 > div,
+.oreui-theme #server-status .status-card,
+.oreui-theme #ip .max-w-3xl > div {
+  border: 3px solid var(--ore-border) !important;
+  border-radius: 2px !important;
+  box-shadow: 0 4px 0 var(--ore-shadow), inset 0 1px 0 rgba(255,255,255,.12) !important;
+}
+.oreui-theme .feature-card img { border-radius: 0 !important; border: 3px solid #252628; image-rendering: auto; }
+.oreui-theme #ip .inline-flex {
+  border: 3px solid var(--ore-border) !important;
+  border-radius: 2px !important;
+  box-shadow: 0 4px 0 var(--ore-shadow) !important;
+}
+.oreui-theme .rounded,
+.oreui-theme .rounded-lg,
+.oreui-theme .rounded-xl,
+.oreui-theme .rounded-2xl,
+.oreui-theme .rounded-full { border-radius: 2px !important; }
+.oreui-theme a.rounded-lg,
+.oreui-theme button.rounded-lg,
+.oreui-theme button.rounded-full,
+.oreui-theme #copy-ip,
+.oreui-theme #manualRefreshBtn,
+.oreui-theme #backToTop,
+.oreui-theme #musicControl {
+  border: 3px solid #202123 !important;
+  border-radius: 2px !important;
+  box-shadow: inset 0 2px 0 rgba(255,255,255,.2), inset 0 -5px 0 rgba(0,0,0,.2), 0 4px 0 #252628 !important;
+  font-weight: 800;
+  transition: filter .12s ease, transform .12s ease;
+}
+.oreui-theme a.rounded-lg:active,
+.oreui-theme button.rounded-lg:active,
+.oreui-theme button.rounded-full:active,
+.oreui-theme #copy-ip:active,
+.oreui-theme #manualRefreshBtn:active { transform: translateY(3px); box-shadow: inset 0 2px 0 rgba(255,255,255,.15), 0 1px 0 #252628 !important; }
+.oreui-theme .bg-blue-600,
+.oreui-theme .hover\:bg-blue-700:hover { background: var(--ore-green) !important; color: #fff !important; }
+.oreui-theme .bg-blue-100 { background: #d0d1d5 !important; color: #171819 !important; }
+.oreui-theme #copy-ip,
+.oreui-theme #manualRefreshBtn,
+.oreui-theme #backToTop,
+.oreui-theme #musicControl { background: var(--ore-green) !important; color: #fff !important; }
+.oreui-theme footer { background: #292b2d !important; border-top: 5px solid #202123; }
+.oreui-theme footer .text-blue-400 { color: #a5d995 !important; }
+.oreui-theme footer .text-gray-300,
+.oreui-theme footer .text-gray-400 { color: #d0d1d5 !important; }
+.oreui-theme #mobileMenu .menu-panel { background: var(--ore-light); color: #171819; border-left: 4px solid var(--ore-border); }
+.oreui-theme #mobileMenu .menu-links a { color: #242527; border-bottom: 2px solid #b7b9bd; font-weight: 800; }
+.oreui-theme #mobileMenu .menu-links a:hover { color: var(--ore-green); }
+.oreui-theme #mobileMenu .menu-copy-btn,
+.oreui-theme #mobileMenu .menu-close-btn {
+  border: 3px solid #202123;
+  border-radius: 2px;
+  background: var(--ore-green);
+  color: #fff;
+  box-shadow: inset 0 2px 0 rgba(255,255,255,.2), 0 4px 0 #252628;
+}
+.oreui-theme .music-tooltip { border-radius: 2px !important; }
+.oreui-theme :focus-visible { outline: 3px solid #b4e5a3 !important; outline-offset: 3px; }
+@media (max-width: 767px) {
+  .oreui-theme nav.fixed .h-16 { height: 4.1rem; }
+  .oreui-theme .hero-section { min-height: 88vh; background-position: 58% center !important; }
+  .oreui-theme .hero-section::before { background: rgba(28,29,30,.68); }
+  .oreui-theme .hero-copy h1 { font-size: clamp(2.8rem, 13vw, 4.5rem); }
+  .oreui-theme .hero-copy > p:nth-of-type(2) { font-size: 1.05rem; line-height: 1.8; }
+  .oreui-theme section:not(.hero-section) { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+  .oreui-theme section h2 { font-size: clamp(1.65rem, 7vw, 2.25rem); }
+  .oreui-theme #backToTop { right: 1rem; bottom: 1rem; }
+  .oreui-theme #musicControl { right: 1rem; bottom: 5rem; }
+  .oreui-theme #ip .inline-flex { width: 100%; max-width: 100%; padding: 1rem !important; }
+  .oreui-theme #ip-text { font-size: 1.2rem; overflow-wrap: anywhere; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .oreui-theme *, .oreui-theme *::before, .oreui-theme *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
+}
