@@ -1,0 +1,80 @@
+/* FrostCraft Minecraft visual theme — standalone layer */
+:root{color-scheme:dark;--mc-bg:#292b27;--mc-panel:#383a35;--mc-stone:#55584f;--mc-black:#171815;--mc-grass:#82ad50;--mc-grass-dark:#496d32;--mc-dirt:#785334;--mc-gold:#f1d36b;--mc-text:#ecebe5;--mc-muted:#b8b8ae}
+html{background:var(--mc-bg);scroll-padding-top:5.5rem}
+body.minecraft-theme{color:var(--mc-text);background:var(--mc-bg);background-image:linear-gradient(#ffffff06 1px,transparent 1px),linear-gradient(90deg,#ffffff06 1px,transparent 1px),linear-gradient(180deg,#30312c,#252622);background-size:32px 32px,32px 32px,auto;background-attachment:fixed;font-family:"Microsoft YaHei","Noto Sans SC",monospace}
+body.minecraft-theme ::selection{color:#171715;background:#d8ee91}
+body.minecraft-theme :is(h1,h2,h3,h4,strong,button){font-weight:800}
+body.minecraft-theme :is(h1,h2,h3,h4){letter-spacing:.025em}
+body.minecraft-theme a{transition:color .16s ease,background-color .16s ease,transform .16s ease}
+body.minecraft-theme :is(button,a){-webkit-tap-highlight-color:transparent}
+body.minecraft-theme :is(.rounded-sm,.rounded,.rounded-md,.rounded-lg,.rounded-xl,.rounded-2xl,.rounded-3xl,.rounded-full){border-radius:0!important}
+body.minecraft-theme .text-gray-900{color:#f4f2e8!important}body.minecraft-theme .text-gray-800{color:#e1e0d8!important}body.minecraft-theme .text-gray-700{color:#cecec4!important}body.minecraft-theme .text-gray-600{color:#b8b9ae!important}body.minecraft-theme .text-gray-500{color:#a1a297!important}
+body.minecraft-theme .text-blue-600,body.minecraft-theme .text-blue-700{color:#b5dc79!important}body.minecraft-theme .text-blue-400{color:#c5e98a!important}body.minecraft-theme .text-green-600,body.minecraft-theme .text-green-700{color:#a5dc72!important}body.minecraft-theme .text-red-600,body.minecraft-theme .text-red-700{color:#ff8c79!important}
+body.minecraft-theme .border-gray-200,body.minecraft-theme .border-gray-300{border-color:#171816!important}body.minecraft-theme .border-blue-100{border-color:#20241b!important}
+body.minecraft-theme .bg-white{background-color:#383a35!important}body.minecraft-theme .bg-gray-50{background-color:#30312d!important}body.minecraft-theme .bg-gray-100{background-color:#292a26!important}body.minecraft-theme .bg-blue-50{background-color:#30382a!important}body.minecraft-theme .bg-blue-100{background-color:#3e4d31!important}body.minecraft-theme .bg-blue-600{background-color:#638f3c!important}body.minecraft-theme .hover\\:bg-blue-700:hover{background-color:#80ad4d!important}
+body.minecraft-theme>nav{color:#f0efe6!important;background:rgba(31,32,29,.97)!important;border-bottom:4px solid #11120f;box-shadow:0 4px 0 #0005,0 8px 24px #0004;backdrop-filter:none!important}
+body.minecraft-theme>nav .text-2xl{color:#c7e78a!important;font-family:monospace;font-weight:900;letter-spacing:-.07em;text-shadow:3px 3px #263b1d,5px 5px #111}
+body.minecraft-theme>nav .hidden a{display:inline-flex;align-items:center;min-height:38px;padding:0 10px;color:#deded4!important;font-size:.86rem;font-weight:800;border:2px solid transparent;text-decoration:none}
+body.minecraft-theme>nav .hidden a:hover,body.minecraft-theme>nav .hidden a:focus-visible{color:#fff!important;background:#4b5f39;border-color:#1b2416;box-shadow:inset 2px 2px #ffffff24,inset -2px -2px #0004}
+body.minecraft-theme #menuToggle{color:#e8e8dc!important;background:#454741!important;border:2px solid #151613;box-shadow:inset 2px 2px #ffffff24,inset -2px -2px #0006,0 3px #111}
+body.minecraft-theme .hero-section{min-height:760px;background-color:#263021;border-bottom:12px solid #4d3926;box-shadow:inset 0 -8px #2b2118}
+body.minecraft-theme .hero-section:before{background:linear-gradient(90deg,#0d110ce0,#0d110cb8 48%,#0d110c42),linear-gradient(0deg,#0f110cb8,transparent 58%)}
+body.minecraft-theme .hero-section:after{content:"";position:absolute;z-index:1;left:0;right:0;bottom:-1px;height:12px;background:repeating-linear-gradient(90deg,#77a84b 0 28px,#6b9a40 28px 56px);border-top:3px solid #9ac86a;box-shadow:0 4px #3f6330}
+body.minecraft-theme .hero-copy{max-width:790px;padding:clamp(1.35rem,3vw,2.6rem);background:#191b16c7;border:4px solid #11130f;outline:2px solid #e4e9d04a;box-shadow:inset 4px 4px #ffffff17,inset -4px -4px #0006,0 10px #0005}
+body.minecraft-theme .hero-copy h1{color:#fff;font-family:monospace;font-size:clamp(3.2rem,8vw,6.5rem);letter-spacing:-.09em;line-height:.98;text-shadow:4px 4px #354d2b,7px 7px #111}
+body.minecraft-theme .hero-copy>p:first-child{color:#d1eaa0!important;font-weight:900;text-shadow:2px 2px #172010}
+body.minecraft-theme .hero-copy>p:nth-of-type(2){color:#f0f0e7!important;line-height:1.85}
+body.minecraft-theme .hero-meta span{color:#f0f1e8;border:2px solid #0a0c09c7;background:#4b553fd6;box-shadow:inset 2px 2px #ffffff1f,inset -2px -2px #0005,0 3px #0005;padding:.6rem .8rem}
+body.minecraft-theme .hero-copy a{min-height:52px;display:inline-flex;align-items:center;justify-content:center;border:3px solid #171914;border-radius:0!important;box-shadow:inset 3px 3px #fff3,inset -3px -3px #0004,0 5px #111;font-weight:900;text-shadow:1px 2px #0006}
+body.minecraft-theme .hero-copy a:active{transform:translateY(4px);box-shadow:inset 3px 3px #0003,0 1px #111}
+body.minecraft-theme .hero-copy a.bg-white{color:#283321!important;background:#d7d7cc!important;text-shadow:none}
+body.minecraft-theme section:not(.hero-section){position:relative;border-top:3px solid #0005;border-bottom:3px solid #ffffff09}
+body.minecraft-theme section:not(.hero-section)>div{position:relative}
+body.minecraft-theme section h2{position:relative;width:fit-content;max-width:100%;margin-left:auto;margin-right:auto;padding:0 1.1rem 1.25rem;color:#f4f1e6!important;font-weight:900;text-shadow:3px 3px #111}
+body.minecraft-theme section h2:after{content:"";position:absolute;bottom:0;left:18%;right:18%;height:6px;background:linear-gradient(90deg,#476c31 0 25%,#91b95b 25% 75%,#476c31 75%);box-shadow:0 3px #141611}
+body.minecraft-theme section h2 svg{color:#b7dc79!important}
+body.minecraft-theme #features,body.minecraft-theme #server-status,body.minecraft-theme #team{background-color:#2d2f2a!important;background-image:linear-gradient(90deg,#ffffff06 1px,transparent 1px),linear-gradient(#ffffff06 1px,transparent 1px),linear-gradient(#0001,#0003);background-size:24px 24px,24px 24px,auto}
+body.minecraft-theme #advantages,body.minecraft-theme #rules,body.minecraft-theme #faq{background-color:#38352f!important;background-image:linear-gradient(45deg,#ffffff06 25%,transparent 25%,transparent 75%,#ffffff06 75%),linear-gradient(45deg,#0002 25%,transparent 25%,transparent 75%,#0002 75%);background-position:0 0,12px 12px;background-size:24px 24px}
+body.minecraft-theme .feature-card,body.minecraft-theme .team-member,body.minecraft-theme #faq .bg-white,body.minecraft-theme #rules .bg-white{color:var(--mc-text);background:#30312d!important;border:3px solid #171815!important;border-radius:0!important;box-shadow:inset 3px 3px #ffffff14,inset -3px -3px #0005,0 6px #171815}
+body.minecraft-theme .feature-card img{border:3px solid #171815;border-radius:0!important;box-shadow:0 4px #111}
+body.minecraft-theme .feature-card h3,body.minecraft-theme .team-member h3{color:#e8efdc!important;text-shadow:2px 2px #111}
+body.minecraft-theme .feature-card p,body.minecraft-theme .team-member p,body.minecraft-theme #faq p,body.minecraft-theme #advantages p,body.minecraft-theme #rules li{color:#d0d0c7!important;line-height:1.75}
+body.minecraft-theme #advantages .grid>div{padding:1.5rem 1rem}
+body.minecraft-theme #advantages .grid>div>div:first-child{width:58px;height:58px;color:#d5eab1;background:#4b6039!important;border:3px solid #171815;box-shadow:inset 3px 3px #ffffff29,inset -3px -3px #0005,0 4px #171815}
+body.minecraft-theme #team .team-member img{width:112px;height:112px;object-fit:cover;border:4px solid #1b1c18!important;border-radius:0!important;box-shadow:inset 0 0 0 3px #9ac66a,0 4px #171815}
+body.minecraft-theme #rules ul{list-style:none;padding-left:0}body.minecraft-theme #rules li{min-height:44px;padding:.45rem .7rem;background:#0003;border-left:4px solid #83a955}
+body.minecraft-theme #rules li svg{color:#a9d276!important}
+body.minecraft-theme #ip .join-section{position:relative;overflow:hidden;color:#f2eee3;background:linear-gradient(180deg,#719c48 0 13px,#60432b 13px,#765235 100%)!important;border-top:7px solid #9ac46a;border-bottom:8px solid #2a2118;box-shadow:inset 0 -5px #0004}
+body.minecraft-theme #ip h2{color:#fff!important;text-shadow:3px 3px #332417,5px 5px #1d1711}
+body.minecraft-theme #ip .inline-flex{padding:1rem 1.25rem;background:#4a4b42!important;border:4px solid #171815!important;box-shadow:inset 4px 4px #ffffff29,inset -4px -4px #0006,0 7px #241b13}
+body.minecraft-theme #ip #ip-text{color:#f4edcf!important;font-family:monospace;letter-spacing:.035em;text-shadow:2px 2px #171815}
+body.minecraft-theme #ip button,body.minecraft-theme #mobileMenu .menu-copy-btn{color:#fff!important;background:#638f3c!important;border:3px solid #1b2115!important;border-radius:0!important;box-shadow:inset 3px 3px #ffffff33,inset -3px -3px #0004,0 4px #171815;font-weight:900}
+body.minecraft-theme #ip button:hover,body.minecraft-theme #mobileMenu .menu-copy-btn:hover{background:#7ea84d!important}
+body.minecraft-theme #ip .max-w-3xl>div>div{background:#4b3928!important;border:3px solid #281c13!important;box-shadow:inset 3px 3px #ffffff17,inset -3px -3px #0004,0 4px #0004}
+body.minecraft-theme #ip .max-w-3xl>div>div a{color:#d5ebaa!important;font-weight:900}
+body.minecraft-theme #server-status .status-card{overflow:hidden;background:#262824!important}
+body.minecraft-theme #server-status .status-card>div:first-child{color:#e9e8df;background:#454841!important;border-bottom:3px solid #171815!important;box-shadow:inset 0 3px #ffffff17}
+body.minecraft-theme #server-status .status-card>div:first-child .font-mono{color:#d7efac!important}
+body.minecraft-theme #server-status #manualRefreshBtn{color:#f4f2e7!important;background:#596f43!important;border:2px solid #20251a;box-shadow:inset 2px 2px #ffffff26,inset -2px -2px #0004,0 3px #171815}
+body.minecraft-theme #statusContent{color:#e5e5dc}
+body.minecraft-theme #statusContent .bg-white{background:#3c3e38!important;border:2px solid #1b1c18!important;border-radius:0!important;box-shadow:inset 2px 2px #ffffff1a,inset -2px -2px #0004,0 3px #0003}
+body.minecraft-theme #statusContent .text-blue-600{color:#c4e887!important}
+body.minecraft-theme #statusContent .border-gray-300{border-color:#5a5c54!important}
+body.minecraft-theme #statusContent .bg-red-100{color:#ffe1d9!important;background:#743d35!important}
+body.minecraft-theme #statusContent .skeleton-pulse{background:linear-gradient(90deg,#484a43 25%,#5b5e54 50%,#484a43 75%);background-size:200% 100%}
+body.minecraft-theme #mobileMenu .menu-overlay{background:#080907c7}
+body.minecraft-theme #mobileMenu .menu-panel{color:#e9e8df;background:#30312d;border-left:4px solid #171815;box-shadow:-8px 0 #0004,-18px 0 32px #0005}
+body.minecraft-theme #mobileMenu .menu-header,body.minecraft-theme #mobileMenu .menu-footer{border-color:#55574e}
+body.minecraft-theme #mobileMenu .menu-close-btn{color:#f0eee5;background:#494b43;border:2px solid #171815;box-shadow:inset 2px 2px #ffffff1f,inset -2px -2px #0004,0 3px #171815}
+body.minecraft-theme #mobileMenu .menu-links a{color:#e7e6dc;border:2px solid #171815;background:#454840;box-shadow:inset 2px 2px #ffffff1a,inset -2px -2px #0004,0 3px #171815}
+body.minecraft-theme #mobileMenu .menu-links a:hover{color:#fff;background:#58713f}
+body.minecraft-theme #mobileMenu .menu-links a:active{transform:translateY(2px);box-shadow:inset 2px 2px #0003,0 1px #171815}
+body.minecraft-theme footer{color:#deded3;background:#20211e!important;border-top:8px solid #141512;box-shadow:inset 0 4px #ffffff0a}
+body.minecraft-theme footer .text-blue-400{color:#c5e98a!important}body.minecraft-theme footer a:hover{color:#c5e98a!important}
+body.minecraft-theme #backToTop,body.minecraft-theme #musicControl{color:#fff!important;background:#596f43!important;border:3px solid #171815;border-radius:0!important;box-shadow:inset 3px 3px #ffffff2b,inset -3px -3px #0005,0 5px #111}
+body.minecraft-theme #backToTop:hover,body.minecraft-theme #musicControl:hover{background:#7ca34c!important;transform:translateY(-2px)}
+body.minecraft-theme #musicControl.playing{animation:mcGlow 1.8s steps(2,end) infinite}
+@keyframes mcGlow{50%{box-shadow:inset 3px 3px #ffffff2b,inset -3px -3px #0005,0 5px #111,0 0 0 4px #a3cf6c40}}
+body.minecraft-theme :focus-visible{outline:3px solid #d6ed93!important;outline-offset:3px}
+@media(max-width:768px){body.minecraft-theme .hero-section{min-height:780px;background-position:45% center!important}body.minecraft-theme .hero-copy{padding:1.25rem;margin:0 .15rem}body.minecraft-theme .hero-copy h1{font-size:clamp(2.7rem,14vw,4.2rem)}body.minecraft-theme .hero-meta span{width:100%}body.minecraft-theme #features .feature-card img{height:180px}body.minecraft-theme #advantages .grid>div{max-width:560px;margin-inline:auto;width:100%}body.minecraft-theme #ip .inline-flex{width:100%;gap:.8rem;padding:.85rem}body.minecraft-theme #ip #ip-text{font-size:clamp(1.15rem,5.2vw,1.55rem);overflow-wrap:anywhere}body.minecraft-theme #musicControl{bottom:80px}}
+@media(prefers-reduced-motion:reduce){body.minecraft-theme *,body.minecraft-theme *:before,body.minecraft-theme *:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
