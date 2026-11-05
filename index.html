@@ -18,7 +18,8 @@
     <meta name="twitter:image" content="https://www.orwoe.cn/img/banner.webp" />
     <link rel="icon" href="./img/icon.png" />
 
-    <link rel="preload" href="./img/banner.webp" as="image" />
+    <link rel="preload" href="./img/banner.webp" as="image" media="(min-width: 769px)" />
+    <link rel="preload" href="./img/banner-mobile.webp" as="image" media="(max-width: 768px)" />
 
     <link rel="stylesheet" href="style.css" />
     </head>
@@ -73,7 +74,7 @@
         </div>
     </div>
 
-    <section class="hero-section min-h-screen flex items-center text-white" style="background-image: url('./img/banner.webp'); background-size: cover; background-position: center;">
+    <section class="hero-section min-h-screen flex items-center text-white" >
         <div class="max-w-7xl w-full mx-auto px-4 pt-20">
             <div class="hero-copy max-w-3xl">
                 <p class="text-sm md:text-base uppercase tracking-[0.18em] text-blue-100 font-semibold mb-5">Java & Bedrock · 原版生存 · 公益服务器</p>
